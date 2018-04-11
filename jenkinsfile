@@ -1,19 +1,15 @@
-pipeline
-{
-agent any
-stages
-{
-stage('Build')
-{
-step{
-echo "building the sorce code"
-sh 'mvn install' 
-}}
-stage('Test')
-{
-echo "Tsting phase"
+pipeline{
+    agent any
+    stages{
+        stage('Build'){
+            step{
+                sh mvn insall
+            }
+        }
+        stage('Test'){
+            step{
+                echo "This is testig phase"
+            }
+        }
+    }
 }
-}
-}
-}
-
