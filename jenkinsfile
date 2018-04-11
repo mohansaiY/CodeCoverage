@@ -12,9 +12,11 @@ sh 'mvn install'
 }
 stage('Test')
 {
+step{
 echo "Tsting phase"
 }
 }
 }
 }
+
 
