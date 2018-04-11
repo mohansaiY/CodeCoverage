@@ -9,6 +9,7 @@ step{
 echo "building the sorce code"
 sh 'mvn install' 
 }
+}
 stage('Test')
 {
 echo "Tsting phase"
