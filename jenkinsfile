@@ -2,12 +2,12 @@ pipeline{
     agent any
     stages{
         stage('Build'){
-            step{
+            steps{
                 sh mvn insall
             }
         }
         stage('Test'){
-            step{
+            steps{
                 echo "This is testig phase"
             }
         }
